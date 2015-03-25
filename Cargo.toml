@@ -1,0 +1,11 @@
+[package]
+
+authors = ["Jorge Aparicio <japaricious@gmail.com>"]
+name = "reg"
+version = "0.0.0"
+
+[dependencies.core]
+git = "https://github.com/japaric/core.rs"
+
+[dependencies.volatile]
+git = "https://github.com/japaric/volatile.rs"
