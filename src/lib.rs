@@ -30,6 +30,7 @@ macro_rules! reg {
         pub mod $register {
             pub mod prelude {
                 pub use super::Bit::*;
+                pub use super::{$($bitfield),*};
             }
 
             use core::ops::{BitAnd, BitOr, Not};
@@ -164,7 +165,7 @@ macro_rules! reg {
             #![allow(non_camel_case_types)]
 
             pub mod prelude {
-                use super::Bit::*;
+                pub use super::{$($bitfield),+};
             }
 
             use core::ops::BitOr;
