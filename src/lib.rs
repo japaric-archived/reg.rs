@@ -37,7 +37,7 @@ macro_rules! reg {
 
             use volatile::Into;
 
-            #[derive(Copy)]
+            #[derive(Clone, Copy)]
             #[repr(C)]
             pub struct Register($ty);
 
@@ -170,7 +170,7 @@ macro_rules! reg {
 
             use core::ops::BitOr;
 
-            #[derive(Copy)]
+            #[derive(Clone, Copy)]
             #[repr(C)]
             pub struct Register($ty);
 
